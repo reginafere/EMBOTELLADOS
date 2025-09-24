@@ -1,0 +1,27 @@
+:root{
+    --bg-color: #101010;
+    --accent-color: #ff0fff;
+    --hover-color: #7f7200;
+    --link-color: #675689;
+    --text-color: #ffffff; 
+    --font-family: "amifer", sans-serif;
+    --font-head: "am-novecento", sans-serif;
+    
+}
+body{
+    background-color: var(--bg-color);
+    font-family: var(--font-family);
+    color: var(--text-color);
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-head);
+}
+.nav-link {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    transition: all 0.3s ease;
+}
+.nav-link {
+    background-color: var(--hover-color);
+    color: var(--link-color);
+}
