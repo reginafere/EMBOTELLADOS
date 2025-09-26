@@ -37,6 +37,8 @@ h3 {
     padding-bottom: 0.5rem;
     font-weight: 100;
     font-size: 26px;
+    margin-top: 41px;
+    
 }
 
 h4 {
@@ -158,4 +160,13 @@ section h3 {
 section h4 {
     color: rgba(255, 255, 255, 0.9);
     font-weight: 600;
+}
+
+main{
+    width: 90%;
+    margin-left: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    min-width: 320;
+    max-width: 1640px;  max-width: 1600px; 
 }
