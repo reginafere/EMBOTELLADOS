@@ -170,3 +170,13 @@ main{
     min-width: 320;
     max-width: 1640px;  max-width: 1600px; 
 }
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+.pregunta p:first-child {
+  text-decoration: underline;
+  text-decoration-color: #1fd4f8;
+  text-decoration-thickness: 3px;
+}
