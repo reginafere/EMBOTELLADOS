@@ -1,9 +1,0 @@
-# Configuración básica para Jekyll
-title: "HTML Layout Template | CENTRO DD5"
-description: "Template HTML/CSS con layouts en Jekyll, páginas de ejemplo y estilos responsive con skeleton"
-baseurl: "/centro.html-layout"
-url: "https://juanfuent-es.github.io"
-
-# Configuración básica de Jekyll
-markdown: kramdown
-highlighter: rouge
