@@ -1,27 +1,53 @@
-:root{
-    --bg-color: #101010;
-    --accent-color: #ff0fff;
-    --hover-color: #7f7200;
-    --link-color: #675689;
-    --text-color: #ffffff; 
-    --font-family: "amifer", sans-serif;
-    --font-head: "am-novecento", sans-serif;
-    
+:root {
+  --amarillo: #e3b61b;
+  --gris: #2d2d2b;
+  --blanco: #ffffff;
+  --backgorund: #E1E3E5;
+
 }
-body{
-    background-color: var(--bg-color);
-    font-family: var(--font-family);
-    color: var(--text-color);
+
+body {
+  background-color: var(--blanco);
+  color: var(--gris);
+  font-family: "Inter", sans-serif;
 }
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-head);
+
+#preloader {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
 }
-.nav-link {
-    background-color: var(--accent-color);
-    color: var(--text-color);
-    transition: all 0.3s ease;
+
+#preloader img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
-.nav-link {
-    background-color: var(--hover-color);
-    color: var(--link-color);
+
+#preloader img#logo{
+  position: absolute;
+  bottom: 161px;
+  height: auto;
+  object-fit: contain;
+  width: 43%;
+  filter: invert(1);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#preloader button#flecha-btn{
+position: absolute;
+    bottom: 8%;
+    height: auto;
+    object-fit: contain;
+    width: 100px;
+    filter: invert(1);
+    left: 50%;
+    transform: translateX(-50%); 
+
+}
+#preloader svg{
+  fill: #e3b61b;
 }
