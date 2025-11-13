@@ -27,26 +27,33 @@ body {
 }
 
 #preloader img#logo{
-  position: absolute;
-  bottom: 161px;
   height: auto;
-  object-fit: contain;
   width: 43%;
   filter: invert(1);
-  left: 50%;
-  transform: translateX(-50%);
+  margin: 0 auto;
+  display: block;
 }
 
-#preloader button#flecha-btn{
-position: absolute;
-    bottom: 8%;
-    height: auto;
-    object-fit: contain;
-    width: 100px;
-    left: 50%;
-    transform: translateX(-50%); 
-  }
-  #preloader svg {
+#preloader footer{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#preloader button#flecha-btn {
+  width: 100px;
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  border: none;
+  background: transparent;
+  margin-top: 1em;
+  height: auto;
+}
+
+#preloader svg {
   transition: all 0.3s ease;
   fill: #e3b61b;
   stroke: #222221;
