@@ -152,7 +152,6 @@ hr {
 
 /* Mejoras para la rúbrica */
 section h3 {
-    color: var(--color-text);
     border-bottom: 2px solid rgba(255, 255, 255, 0.3);
     padding-bottom: 0.5rem;
 }
