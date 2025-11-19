@@ -13,34 +13,42 @@ body {
 }
 
 #preloader {
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background: black;
+
 }
 
 #preloader img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: .6;
+
 }
 
 #preloader img#logo{
-  height: auto;
-  width: 43%;
-  filter: invert(1);
-  margin: 0 auto;
-  display: block;
+    height: auto;
+    width: 43%;
+    filter: invert(1) brightness(2);
+    margin: 0 auto;
+    display: block;
+    opacity: 1;
+
 }
 
 #preloader footer{
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: auto;
-  background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    z-index: 11;
+
 }
 #preloader button#flecha-btn {
   width: 100px;
@@ -62,4 +70,8 @@ body {
 #preloader button#flecha-btn:hover svg {
   fill: #222221;
   stroke: white;
+}
+
+#logo-section {
+  width: 40%;
 }

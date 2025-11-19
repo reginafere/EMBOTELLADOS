@@ -6,6 +6,8 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Embotellados</title>
+		 <!-- Link Swiper's CSS -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 		<link rel="stylesheet" href="https://use.typekit.net/xyo0ryv.css">
 		<link rel="stylesheet" href="./css/style.css">
 		<link rel="stylesheet" href="./css/layout.css">
@@ -25,50 +27,44 @@
 				</button>
 			</footer>
 		</section>
-		<section id="galeria">
-			<div class="content">
-				<div class="content__img content__img--full" style="background-image:url(./img/img.png);"></div>
-
-				<h3 class="content__title">
-					<img src="./img/centro-logo.svg" alt="">
-				</h3>
-			</div><!--/content-->
-		</section>
-
 		<main class="container">
 			<section class="row">
 				<div class="columns twelve">
-					<h1>EMbotellados</h1>
-					<p>Einámicas laborales y desgaste físico en transportistas refresqueros</p>
+					<img src="./img/logo_emb.svg" alt="" id="logo-section">
 					<header class="container">
-						<nav>
-							<ul>
-								<li>
-									<a href="./about.html">About</a>
-								</li>
-								<li>
-									<a href="./entrevistas.html">Entrevistas</a>
-								</li>
-							</ul>
-						</nav>
 					</header>
 				</div>
 			</section>
 			<section class="row">
 				<article class="columns six">
-					<h3>Transportistas refresqueros en CDMX</h3>
-					<p>Detrás de cada refresco en la tienda hay horas de carga, descarga y resistencia. Los transportistas sostienen con su cuerpo una dinámica laboral invisible, y este proyecto busca hacerla visible.</p>
-					<p>Estas dinámicas no solo implican esfuerzo físico, también moldean rutinas, emociones y relaciones en el día a día de los transportistas. Al poner atención en estos aspectos, buscamos abrir un espacio de reflexión donde lo cotidiano se transforme en una narrativa compartida que cuestione cómo se valora y reconoce este trabajo.</p>
+					<h3>CONOCE SOBRE EMBOTELLADOS</h3>
+					<p> Las dinámicas laborales de los transportistas de reparto de refrescos, especialmente en compañías como Pepsico y Femsa, muestran un profundo desgaste físico y emocional que rara vez se visibiliza. Nuestro proyecto propone un abordaje cualitativo, recuperar testimonios que revelan la experiencia corporay mental, peso movilizado e impactos acumulados en las jornadas laborales de los trabajadores. Como salida, planteamos una instalación interactiva donde el público experimente en su propio cuerpo la dificultad de este trabajo. 
+A través de estaciones que reproducen esfuerzos cotidianos —cargar, empujar o resistir—, la propuesta combina lo sensible con lo informativo: la vivencia corporal junto con textos que sensivilizan. Desde la ironía de trasladar estructuras de trabajo a un espacio expositivo, buscamos generar un dispositivo crítico que convierta lo invisible en tangible, utilizando el cuerpo como plataforma para interiorizar y transformar este conocimiento en acción.
+</p>
 				</article>
-				<article class="columns six">
-					<h3>desgaste físico</h3>
-					<p>
-						El cuerpo de los transportistas es la primera herramienta de trabajo y, al mismo tiempo, la más desgastada. Jornadas que implican cargar cientos de kilos, subir y bajar escaleras, resistir bajo el sol o la lluvia, dejan huellas visibles e invisibles: dolores crónicos, lesiones acumuladas y un agotamiento que rara vez se reconoce.
-					</p>
-					<p>
-						Este desgaste no es solo individual, es estructural. La prisa por cumplir rutas, las condiciones del tráfico en la ciudad y la presión de las empresas convierten al cuerpo en un vehículo que se consume día tras día. Al visibilizar estas dinámicas buscamos que el público comprenda que detrás de la eficiencia del consumo cotidiano existe un costo humano que no debería normalizarse.
-					</p>
-				</article>
+			</section>
+			<section id="galeria">
+				<!-- Swiper -->
+				<div class="swiper " id="galeria-slider">
+					<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="./img/foto 1.jpg" alt="">
+					</div>
+					<div class="swiper-slide">Slide 2</div>
+						<img src="img/foto 2.jpg" alt="">
+					<div class="swiper-slide">Slide 3</div>
+						<img src="img/foto 3.jpg" alt="">
+					<div class="swiper-slide">Slide 4</div>
+						<img src="img/foto 4.jpg" alt="">
+					<div class="swiper-slide">Slide 5</div>
+						<img src="img/foto 5.jpg" alt="">
+					<div class="swiper-slide">Slide 6</div>
+						<img src="img/foto 6.jpg" alt="">
+					<div class="swiper-slide">Slide 7</div>
+						<img src="img/foto 7.jpg" alt="">
+					<div class="swiper-slide">Slide 8</div>
+						<img src="img/foto 8.jpg" alt="">
+				</div>
 			</section>
 		</main>
 		<footer class="container">
@@ -88,5 +84,33 @@
 				</div>
 			</div>
 		</footer>
+
+		<!-- Swiper JS -->
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<!-- Initialize Swiper -->
+		<script>
+			var swiper = new Swiper("#galeria-slider", {
+			slidesPerView: 1,
+			spaceBetween: 10,
+			pagination: {
+				el: ".swiper-pagination",
+				clickable: true,
+			},
+			breakpoints: {
+				640: {
+				slidesPerView: 2,
+				spaceBetween: 20,
+				},
+				768: {
+				slidesPerView: 4,
+				spaceBetween: 40,
+				},
+				1024: {
+				slidesPerView: 5,
+				spaceBetween: 50,
+				},
+			},
+			});
+		</script>
 	</body>
 </html>
