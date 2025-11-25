@@ -1,5 +1,16 @@
+@font-face {
+    font-family: 'Embotellados Ancha';
+    src: url('Embotellados-Ancha.woff2') format('woff2'),
+        url('Embotellados-Ancha.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 :root {
-    --font-base: 'Roboto', Helvetica, Arial, Lucida, sans-serif;
+    --font-base: 'Inter', Helvetica, Arial, Lucida, sans-serif;
+    --font-titulos: 'Embotellados Ancha';
     --color-text: #FFF;
     --color-bg: #000;
 }
@@ -20,6 +31,7 @@ a {
 
 /* Títulos responsive */
 h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-titulos);
     font-weight: 800;
 }
 
