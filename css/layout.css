@@ -19,6 +19,7 @@ body {
   position: relative;
   background: black;
   margin: 0;
+  padding: 0;
 }
 
 #preloader video {
