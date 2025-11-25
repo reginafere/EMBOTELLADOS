@@ -130,7 +130,7 @@ footer#main-footer {
 
 /* Espaciado mejorado para secciones */
 section {
-    margin-bottom: 2rem;
+    padding: 100px 0;
 }
 
 /* Estilos para listas en criterios de evaluación */
@@ -162,12 +162,8 @@ section h4 {
 }
 
 main{
-    width: 90%;
-    margin-left: 0 auto;
-    margin-top: 40px;
+    width: 100%;
     margin-bottom: 40px;
-    min-width: 320;
-    max-width: 1640px;  max-width: 1600px; 
 }
 .row {
   display: flex;
