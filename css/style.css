@@ -152,7 +152,7 @@ footer#main-footer {
     height: 100vh;
     right: 0;
     bottom: 0;
-    background-color: #fff;
+    background-color: none;
     z-index: 100;
     padding: 0;
     overflow-y: auto;
@@ -164,7 +164,8 @@ footer#main-footer {
     width: 100%;
     background: #daa800;
     opacity: 0;
-    transform: translate();
+    transform: translate(100%,0);
+    transition: all 500ms;
 }
 
 #main-nav li {
