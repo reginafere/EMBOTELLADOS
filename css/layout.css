@@ -1,9 +1,8 @@
 :root {
-  --amarillo: #e3b61b;
+  --amarillo: #daa800;
   --gris: #2d2d2b;
   --blanco: #ffffff;
   --backgorund: #E1E3E5;
-
 }
 
 body {
@@ -64,7 +63,7 @@ body {
 
 #preloader svg {
   transition: all 0.3s ease;
-  fill: #e3b61b;
+  fill: #daa800;
   stroke: #222221;
 }
 
