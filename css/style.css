@@ -114,8 +114,13 @@ footer#main-footer {
 #button-menu.active{
     filter: invert(1);
 }
+
+#button-menu.active + ul{
+ transform: translate(0,0);   
+ opacity: 1;
+}
 #main-nav span {
-    color: red;
+    color: rgb(0, 0, 0);
     display: block;
     padding: 1em 0;
     margin: 0 1em;
