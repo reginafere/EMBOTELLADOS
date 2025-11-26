@@ -64,7 +64,7 @@ body {
 #preloader svg {
   transition: all 0.3s ease;
   fill: #daa800;
-  stroke: #222221;
+  stroke:none;
 }
 
 #preloader button#flecha-btn:hover svg {
