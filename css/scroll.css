@@ -2,7 +2,7 @@
     --scroll-background: rgb(255, 255, 255);
     --scroll-foreground: rgb(0, 0, 0);
     --scroll-background-over: #daa800;
-    --scroll-size: 10px;
+    --scroll-size: 20px;
 }
 
 ::-webkit-scrollbar {
