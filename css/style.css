@@ -1,3 +1,4 @@
+@import '../scroll.css';
 :root {
     --font-base: 'Roboto', Helvetica, Arial, Lucida, sans-serif;
     --color-text: #FFF;

@@ -1,0 +1,30 @@
+:root {
+    --scroll-background: red;
+    --scroll-foreground: blue;
+    --scroll-background-over: yellow;
+    --scroll-size: 10px;
+}
+
+::-webkit-scrollbar {
+    background-color: var(--scroll-background);
+    height: var(--scroll-size);
+    width: var(--scroll-size);
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--scroll-background);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--scroll-foreground);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--scroll-background-over);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
+}
