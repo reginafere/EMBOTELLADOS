@@ -1,6 +1,18 @@
 @import '../scroll.css';
+
+@font-face {
+    font-family: 'Embotellados Ancha';
+    src: url('Embotellados-Ancha.woff2') format('woff2'),
+        url('Embotellados-Ancha.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 :root {
-    --font-base: 'Roboto', Helvetica, Arial, Lucida, sans-serif;
+    --font-base: 'Inter', Helvetica, Arial, Lucida, sans-serif;
+    --font-titulos: 'Embotellados Ancha';
     --color-text: #FFF;
     --color-bg: #000;
 }
@@ -21,6 +33,7 @@ a {
 
 /* Títulos responsive */
 h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-titulos);
     font-weight: 800;
 }
 
@@ -81,6 +94,47 @@ footer#main-footer {
     padding: 2em 0 1em 0;
 }
 
+#button-menu{
+    position: fixed;
+    top:20px;
+    right:40px;
+    width: 70px;
+    z-index: 9999;
+    background: none;
+    padding: 1em;
+    margin: 0;
+    border-radius: 0;
+    outline: none;
+    height: auto;
+    cursor: pointer;
+    border: none;
+    pointer-events: auto;
+    height: 70px;
+    background: none;
+}
+#button-menu:hover,
+#button-menu.active{
+    filter: invert(1);
+}
+
+#button-menu.active + ul{
+ transform: translate(0,0);   
+ opacity: 1;
+}
+#main-nav span {
+    color: rgb(0, 0, 0);
+    display: block;
+    padding: 1em 0;
+    margin: 0 1em;
+}
+#button-menu img{
+    width: 80px;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
 /* Components */
 
 .hero {
@@ -91,6 +145,58 @@ footer#main-footer {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+#main-nav{
+    position: fixed;
+    width: 30%;
+    min-width: 280px;
+    height: 100vh;
+    right: 0;
+    bottom: 0;
+    background-color: none;
+    z-index: 100;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: visible;
+}
+
+#main-nav ul {
+    list-style: none;
+    width: 100%;
+    background: #daa800;
+    opacity: 0;
+    transform: translate(100%,0);
+    transition: all 500ms;
+}
+
+#main-nav li {
+    background-color: #daa800;
+}
+
+#main-nav a {
+    color: #000;
+    font-size: 24px;
+    font-weight: 900;
+    font-family: var(--font-titulos);
+    text-transform: uppercase;
+    margin: 0;
+    cursor: pointer;
+    padding: 0;
+    display: inline-block;
+}
+
+#main-nav img{
+    opacity: 0.8;
+}
+
+#main-nav a:hover {
+    display: inline-block;
+   transform: scale(1.1);
+}
+
+#main-nav a:hover img {
+    opacity: 1;
 }
 
 .nav-link {
@@ -131,7 +237,7 @@ footer#main-footer {
 
 /* Espaciado mejorado para secciones */
 section {
-    margin-bottom: 2rem;
+    padding: 100px 0;
 }
 
 /* Estilos para listas en criterios de evaluación */
@@ -153,7 +259,6 @@ hr {
 
 /* Mejoras para la rúbrica */
 section h3 {
-    color: var(--color-text);
     border-bottom: 2px solid rgba(255, 255, 255, 0.3);
     padding-bottom: 0.5rem;
 }
@@ -164,12 +269,8 @@ section h4 {
 }
 
 main{
-    width: 90%;
-    margin-left: 0 auto;
-    margin-top: 40px;
+    width: 100%;
     margin-bottom: 40px;
-    min-width: 320;
-    max-width: 1640px;  max-width: 1600px; 
 }
 .row {
   display: flex;

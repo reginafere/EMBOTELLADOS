@@ -1,92 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
 
-	<head>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Embotellados</title>
-		<link rel="stylesheet" href="https://use.typekit.net/xyo0ryv.css">
-		<link rel="stylesheet" href="./css/style.css">
-		<link rel="stylesheet" href="./css/layout.css">
-		<link rel="stylesheet" href="./css/galeria.css">
-	</head>
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Embotellados</title>
+	<!-- Link Swiper's CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/layout.css">
+	<link rel="stylesheet" href="./css/galeria.css">
+</head>
 
-	<body>
-		<section id="preloader">
-			<img src="./img/embotellados-home.jpg" alt="Repartidor empujando diablito">
-			<footer>
-				<img src="./img/logo_emb.svg" alt="Embotellados logo" id="logo">
-				<button id="flecha-btn">
-					<!-- <img src="./img/flecha.svg" alt="Icono flecha" id="flecha"> -->
-					<svg width="80" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 57.62 68.09">
-						<polygon points="57.62 40.76 46.66 29.8 36.64 39.82 36.64 0 21.14 0 21.14 39.97 10.96 29.8 0 40.76 28.76 68.09 28.81 68.04 28.86 68.09 57.62 40.76"/>
-					</svg>
-				</button>
-			</footer>
+<body>
+	<section id="preloader">
+		<video src="https://res.cloudinary.com/dpfqraeom/video/upload/v1764087280/embotellados_dli1yn.mp4" muted
+			playsinline autoplay loop></video>
+		<img src="./img/embotellados-home.jpg" alt="Repartidor empujando diablito">
+		<footer>
+			<img src="./img/logo_emb.svg" alt="Embotellados logo" id="logo">
+			<button id="flecha-btn">
+				<!-- <img src="./img/flecha.svg" alt="Icono flecha" id="flecha"> -->
+				<svg width="80" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 57.62 68.09">
+					<polygon
+						points="57.62 40.76 46.66 29.8 36.64 39.82 36.64 0 21.14 0 21.14 39.97 10.96 29.8 0 40.76 28.76 68.09 28.81 68.04 28.86 68.09 57.62 40.76" />
+				</svg>
+			</button>
+		</footer>
+	</section>
+	<nav id="main-nav">
+		<button id="button-menu">
+			<img src="img/menu_hamb.svg" alt="Menú" width="100">
+		</button>
+		<ul>
+			<li>
+				<a href="#about" title="Conoce sobre Embotellados">
+					<img src="img/about.png" alt="transportista con garrafones">
+					<span> About</span>
+				</a>
+			</li>
+			<li>
+				<a href="#galeria" title="Conoce sobre Embotellados">
+					<img src="img/galeria.png" alt="transportista con garrafones">
+					<span> Galeria</span>
+				</a>
+			</li>
+			<li>
+				<a href="#testimonios" title="Conoce sobre Embotellados">
+					<img src="img/testimonios.png" alt="transportista con garrafones">
+					<span> Testimonios</span>
+				</a>
+			</li>
+			<li>
+				<a href="#experiencia-inmersiva" title="Conoce sobre Embotellados">
+					<img src="img/experienciainmersiva.png" alt="transportista con garrafones">
+					<span>Experiencia inmersiva</span>
+				</a>
+			</li>
+			<li>
+				<a href="#elcuerpo-texto" title="Conoce sobre Embotellados">
+					<img src="img/elcuerpocomoherramienta.png" alt="transportista con garrafones">
+					<span>El cuerpo como herramienta de trabajo</span>
+				</a>
+			</li>
+		</ul>
+	</nav>
+	<main>
+		<section id="about">
+			<div class="container">
+				<div class="row">
+					<img src="./img/logo_emb.svg" alt="" id="logo-section">
+				</div>
+				<section class="row">
+					<article class="columns six">
+						<h3>CONOCE SOBRE EMBOTELLADOS</h3>
+						<p> Las dinámicas laborales de los transportistas de reparto de refrescos, especialmente en
+							compañías como <b>Pepsico</b> y <b>Femsa</b>, muestran un profundo desgaste físico y
+							emocional que rara vez se visibiliza. </p>
+						<p>Nuestro proyecto propone un abordaje cualitativo, recuperar testimonios que revelan la
+							experiencia corporay mental, peso movilizado e impactos acumulados en las jornadas laborales
+							de los trabajadores.</p>
+						<p><i>Como salida, planteamos una <u>instalación interactiva</u> donde el público experimente en
+								su propio cuerpo la dificultad de este trabajo.</i></p>
+						<p>A través de estaciones que reproducen esfuerzos cotidianos <i>—cargar, empujar o
+								resistir—</i>, la propuesta combina lo sensible con lo informativo: la vivencia corporal
+							junto con textos que sensivilizan. Desde la ironía de trasladar estructuras de trabajo a un
+							espacio expositivo, buscamos generar un dispositivo crítico que convierta lo invisible en
+							tangible, utilizando el cuerpo como plataforma para interiorizar y transformar este
+							conocimiento en acción.</p>
+					</article>
+				</section>
+			</div>
 		</section>
 		<section id="galeria">
-			<div class="content">
-				<div class="content__img content__img--full" style="background-image:url(./img/img.png);"></div>
-
-				<h3 class="content__title">
-					<img src="./img/centro-logo.svg" alt="">
-				</h3>
-			</div><!--/content-->
+			<!-- Swiper -->
+			<div class="swiper " id="galeria-slider">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="./img/foto 1.jpg" alt="repartidor epura">
+					</div>
+					<div class="swiper-slide">
+						<img src="img/foto 2.jpg" alt="">
+					</div>
+					<div class="swiper-slide">
+						<img src="img/foto 3.jpg" alt="">
+					</div>
+					<div class="swiper-slide">
+						<img src="img/foto 4.jpg" alt="">
+					</div>
+					<div class="swiper-slide">
+						<img src="img/foto 5.jpg" alt="">
+					</div>
+					<div class="swiper-slide">
+						<img src="img/foto 6.jpg" alt="">
+					</div>
+					<div class="swiper-slide">
+						<img src="img/foto 7.jpg" alt="">
+					</div>
+					<div class="swiper-slide">
+						<img src="img/foto 8.jpg" alt="">
+					</div>
+				</div>
 		</section>
+		<section id="testimonios">
 
-		<main class="container">
-			<section class="row">
-				<div class="columns twelve">
-					<h1>EMbotellados</h1>
-					<p>Einámicas laborales y desgaste físico en transportistas refresqueros</p>
-					<header class="container">
-						<nav>
-							<ul>
-								<li>
-									<a href="./about.html">About</a>
-								</li>
-								<li>
-									<a href="./entrevistas.html">Entrevistas</a>
-								</li>
-							</ul>
-						</nav>
-					</header>
-				</div>
+		<video src="https://res.cloudinary.com/dpfqraeom/video/upload/v1764087280/embotellados_dli1yn.mp4" muted
+			playsinline autoplay loop></video>
 			</section>
-			<section class="row">
-				<article class="columns six">
-					<h3>Transportistas refresqueros en CDMX</h3>
-					<p>Detrás de cada refresco en la tienda hay horas de carga, descarga y resistencia. Los transportistas sostienen con su cuerpo una dinámica laboral invisible, y este proyecto busca hacerla visible.</p>
-					<p>Estas dinámicas no solo implican esfuerzo físico, también moldean rutinas, emociones y relaciones en el día a día de los transportistas. Al poner atención en estos aspectos, buscamos abrir un espacio de reflexión donde lo cotidiano se transforme en una narrativa compartida que cuestione cómo se valora y reconoce este trabajo.</p>
-				</article>
-				<article class="columns six">
-					<h3>desgaste físico</h3>
-					<p>
-						El cuerpo de los transportistas es la primera herramienta de trabajo y, al mismo tiempo, la más desgastada. Jornadas que implican cargar cientos de kilos, subir y bajar escaleras, resistir bajo el sol o la lluvia, dejan huellas visibles e invisibles: dolores crónicos, lesiones acumuladas y un agotamiento que rara vez se reconoce.
-					</p>
-					<p>
-						Este desgaste no es solo individual, es estructural. La prisa por cumplir rutas, las condiciones del tráfico en la ciudad y la presión de las empresas convierten al cuerpo en un vehículo que se consume día tras día. Al visibilizar estas dinámicas buscamos que el público comprenda que detrás de la eficiencia del consumo cotidiano existe un costo humano que no debería normalizarse.
-					</p>
-				</article>
-			</section>
-		</main>
-		<footer class="container">
-			<div class="row">
-				<div class="columns four">
-					<h3>derechos reservados</h3>
-				</div>
-				<div class="columns four">
-					<h3>contacto</h3>
-					<a href="mailto:mregina@centro.edu.mx" class="button">Mi mail</a>
-				</div>
-				<div class="columns four">
-					<h3>redes sociales</h3>
-					<a href="" class="link">INSTAGRAM</a>
-					<a href="" class="link">PINTEREST</a>
-					<a href="" class="link">TIKTOK</a>
-				</div>
+		<img src="./img/embotellados-home.jpg" alt="Repartidor empujando diablito">
+	</main>
+	<footer class="container">
+		<div class="row">
+			<div class="columns four">
+				<h3>derechos reservados</h3>
 			</div>
-		</footer>
-	</body>
+			<div class="columns four">
+				<h3>contacto</h3>
+				<a href="mailto:mregina@centro.edu.mx" class="button">mándanos un mail</a>
+			</div>
+			<div class="columns four">
+				<h3>redes sociales</h3>
+				<a href="" class="link">INSTAGRAM</a>
+				<a href="" class="link">PINTEREST</a>
+				<a href="" class="link">TIKTOK</a>
+			</div>
+		</div>
+	</footer>
+	<script src="js/menu.js" ></script>
+	<!-- Swiper JS -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<!-- Initialize Swiper -->
+	<script>
+		var swiper = new Swiper("#galeria-slider", {
+			slidesPerView: 1,
+			spaceBetween: 10,
+			pagination: {
+				el: ".swiper-pagination",
+				clickable: true,
+			},
+			breakpoints: {
+				640: {
+					slidesPerView: 2,
+					spaceBetween: 20,
+				},
+				768: {
+					slidesPerView: 4,
+					spaceBetween: 40,
+				},
+				1024: {
+					slidesPerView: 5,
+					spaceBetween: 50,
+				},
+			},
+		});
+	</script>
+</body>
+
 </html>

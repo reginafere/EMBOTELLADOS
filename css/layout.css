@@ -1,9 +1,8 @@
 :root {
-  --amarillo: #e3b61b;
+  --amarillo: #daa800;
   --gris: #2d2d2b;
   --blanco: #ffffff;
   --backgorund: #E1E3E5;
-
 }
 
 body {
@@ -17,31 +16,40 @@ body {
   height: 100vh;
   overflow: hidden;
   position: relative;
+  background: black;
+  margin: 0;
+  padding: 0;
 }
 
-#preloader img{
+#preloader video {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
+  opacity: .6;
 }
 
-#preloader img#logo{
+#preloader img#logo {
   height: auto;
   width: 43%;
-  filter: invert(1);
+  filter: invert(1) brightness(2);
   margin: 0 auto;
   display: block;
+  opacity: 1;
+
 }
 
-#preloader footer{
+#preloader footer {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   height: auto;
-  background-color: rgba(0, 0, 0, 0.5);
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  z-index: 11;
+
 }
+
 #preloader button#flecha-btn {
   width: 100px;
   display: block;
@@ -55,11 +63,21 @@ body {
 
 #preloader svg {
   transition: all 0.3s ease;
-  fill: #e3b61b;
-  stroke: #222221;
+  fill: #daa800;
+  stroke:none;
 }
 
 #preloader button#flecha-btn:hover svg {
   fill: #222221;
   stroke: white;
+}
+
+#logo-section {
+  width: 40%;
+}
+
+#about
+{
+  background-color: #E1E3E5;
+  width: 100%;
 }
