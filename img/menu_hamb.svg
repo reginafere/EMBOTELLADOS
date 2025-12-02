@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 85.47 64.24" width="85.47" height="64.24" fill="#ffffffff">
     <path d="M85.47,23.57v-12.18c0-6.29-4.53-11.4-10.11-11.4H10.11C4.53,0,0,5.1,0,11.4v12.18"/>
-    <polyline points="0 25.86 0 41.36 85.47 41.36 85.47 25.86"/></svg>
+    <polyline points="0 25.86 0 41.36 85.47 41.36 85.47 25.86"/>
     <polyline points="0 43.64 0 64.24 85.47 64.24 85.47 43.64"/>
+</svg>
