@@ -9,7 +9,6 @@
     font-display: swap;
 }
 
-
 :root {
     --font-base: 'Inter', Helvetica, Arial, Lucida, sans-serif;
     --font-titulos: 'Embotellados Ancha';
@@ -17,7 +16,6 @@
     --color-bg: #000;
 }
 
-/* Estilos default */
 body {
     font-family: var(--font-base);
     color: var(--color-text);
@@ -31,7 +29,6 @@ a {
     text-decoration: none;
 }
 
-/* Títulos responsive */
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-titulos);
     font-weight: 800;
@@ -52,7 +49,6 @@ h3 {
     font-weight: 100;
     font-size: 26px;
     margin-top: 41px;
-    
 }
 
 h4 {
@@ -77,7 +73,7 @@ img {
     max-width: 100%;
     height: auto;
 }
-/* layout */
+
 
 header#main-header nav {
     text-align: center;
@@ -110,23 +106,58 @@ footer#main-footer {
     border: none;
     pointer-events: auto;
     height: 70px;
-    background: none;
 }
 #button-menu:hover,
 #button-menu.active{
     filter: invert(1);
 }
 
+#main-nav{
+    position: fixed;
+    width: 30%;
+    min-width: 280px;
+    height: 100vh;
+    right: 0;
+    bottom: 0;
+    background-color: none;
+    z-index: 100;
+    padding: 0;
+    overflow-y: hidden;   
+    overflow-x: visible;
+}
+
+#main-nav.menu-open{
+    overflow-y: auto;      /* Aparece la barra solo con menú abierto */
+    scrollbar-width: thin; /* Firefox: hace la barra más delgada */
+}
+
+/* Navegadores basados en WebKit (Chrome, Edge, Safari, Opera) */
+#main-nav.menu-open::-webkit-scrollbar {
+    width: 6px;            /* Ajusta el grosor de la barra vertical */
+}
+
+#main-nav.menu-open::-webkit-scrollbar-track {
+    background: transparent;  /* Opcional: fondo del track */
+}
+
+#main-nav.menu-open::-webkit-scrollbar-thumb {
+    background: #888;         /* Opcional: color de la barra */
+    border-radius: 10px;      /* Opcional: esquinas redondeadas */
+}
+
+
 #button-menu.active + ul{
  transform: translate(0,0);   
  opacity: 1;
 }
+
 #main-nav span {
     color: rgb(0, 0, 0);
     display: block;
     padding: 1em 0;
     margin: 0 1em;
 }
+
 #button-menu img{
     width: 80px;
     height: auto;
@@ -145,20 +176,6 @@ footer#main-footer {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-}
-
-#main-nav{
-    position: fixed;
-    width: 30%;
-    min-width: 280px;
-    height: 100vh;
-    right: 0;
-    bottom: 0;
-    background-color: none;
-    z-index: 100;
-    padding: 0;
-    overflow-y: auto;
-    overflow-x: visible;
 }
 
 #main-nav ul {
@@ -218,7 +235,6 @@ footer#main-footer {
     color: var(--color-text);
 }
 
-
 .nav-link:hover {
     text-decoration: underline;
 }
@@ -227,7 +243,6 @@ footer#main-footer {
     text-align: center;
 }
 
-/* Estilos adicionales para títulos */
 .lead {
     font-size: 1.25rem;
     font-weight: 300;
@@ -235,12 +250,10 @@ footer#main-footer {
     margin-bottom: 1.5em;
 }
 
-/* Espaciado mejorado para secciones */
 section {
     padding: 100px 0;
 }
 
-/* Estilos para listas en criterios de evaluación */
 section ul {
     margin-bottom: 1rem;
 }
@@ -250,14 +263,12 @@ section li {
     line-height: 1.5;
 }
 
-/* Separadores visuales */
 hr {
     border: none;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
     margin: 2rem 0;
 }
 
-/* Mejoras para la rúbrica */
 section h3 {
     border-bottom: 2px solid rgba(255, 255, 255, 0.3);
     padding-bottom: 0.5rem;
