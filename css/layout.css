@@ -9,6 +9,7 @@ body {
   background-color: var(--blanco);
   color: var(--gris);
   font-family: "Inter", sans-serif;
+  overflow-x: hidden;
 }
 
 #preloader {
