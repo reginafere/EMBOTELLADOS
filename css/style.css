@@ -9,9 +9,19 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Embotellados Regular';
+    src: url('Embotellados-Regular.woff2') format('woff2'),
+        url('Embotellados-Regular.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
 :root {
     --font-base: 'Inter', Helvetica, Arial, Lucida, sans-serif;
     --font-titulos: 'Embotellados Ancha';
+    --font-base: 'Embotellados Regular';
     --color-text: #FFF;
     --color-bg: #000;
 }
@@ -22,6 +32,7 @@ body {
     background: var(--color-bg);
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
 }
 
 a {
@@ -319,4 +330,16 @@ main{
 
 .swiper-pagination-bullet-active {
     background: var(--amarillo);
+}
+
+/* footer */
+#main-footer {
+    background-color: var(--amarillo);
+}
+#main-footer a {
+
+}
+
+#main-footer p {
+
 }
