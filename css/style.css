@@ -151,22 +151,20 @@ footer#main-footer {
 }
 
 #main-nav.menu-open{
-    overflow-y: auto;      /* Aparece la barra solo con menú abierto */
-    scrollbar-width: thin; /* Firefox: hace la barra más delgada */
+    overflow-y: auto;      
+    scrollbar-width: thin; 
 }
-
-/* Navegadores basados en WebKit (Chrome, Edge, Safari, Opera) */
 #main-nav.menu-open::-webkit-scrollbar {
-    width: 6px;            /* Ajusta el grosor de la barra vertical */
+    width: 6px;            
 }
 
 #main-nav.menu-open::-webkit-scrollbar-track {
-    background: transparent;  /* Opcional: fondo del track */
+    background: transparent;  
 }
 
 #main-nav.menu-open::-webkit-scrollbar-thumb {
-    background: #888;         /* Opcional: color de la barra */
-    border-radius: 10px;      /* Opcional: esquinas redondeadas */
+    background: #888;         
+    border-radius: 10px;      
 }
 
 

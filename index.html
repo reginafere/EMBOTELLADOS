@@ -9,16 +9,13 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
 
 	<link rel="icon" type="image/svg+xml" href="./favicon.svg" />
-	<meta name="apple-mobile-web-app-title" content="Embotellados" />
 	<link rel="manifest" href="./static/site.webmanifest" />
 
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;600;900&display=swap"
-		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;600;900&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" href="./css/style.css">
 	<link rel="stylesheet" href="./css/layout.css">
@@ -46,8 +43,8 @@
 	<!-- MENÚ -->
 	<nav id="main-nav">
 		<button id="button-menu">
-			<img src="img/menu_hamb.svg" alt="Abrir Menú" class="tapa-icon" width="100">
-			<img src="img/salida.svg" alt="Cerrar Menú" class="close-icon" width="100">
+			<img src="img/menu_hamb.svg" class="tapa-icon">
+			<img src="img/salida.svg" class="close-icon">
 		</button>
 
 		<ul>
@@ -61,29 +58,27 @@
 
 	<main>
 
-		<!-- ABOUT -->
-		<section id="about">
-			<div class="container">
-				<div class="row">
-					<img src="./img/logo_emb.svg" id="logo-section">
-				</div>
+<section id="about">
+    <div class="container">
+        <div class="row about-wrapper">
+            <div class="six columns about-text">
+                <h2 class="about-titulo">CONOCE SOBRE EMBOTELLADOS</h2>
 
-				<section class="row">
-					<article class="columns six">
-						<h3>CONOCE SOBRE EMBOTELLADOS</h3>
-
-						<p>LLas dinámicas laborales de los transportistas de reparto de refrescos, especialmente en compañías como Pepsico y Femsa, muestran un profundo desgaste físico y emocional que rara vez se visibiliza. Nuestro proyecto propone un abordaje cualitativo, recuperar testimonios que revelan la experiencia corporal
+                <p>Las dinámicas laborales de los transportistas de reparto de refrescos, muestran un profundo desgaste físico y emocional que rara vez se visibiliza. Nuestro proyecto propone un abordaje cualitativo, recuperar testimonios que revelan la experiencia corporal
 y mental, peso movilizado e impactos acumulados en las jornadas laborales de los trabajadores. </p>
-						<p>Como salida, planteamos una instalación interactiva donde el público experimente en su propio cuerpo la dificultad de este trabajo. 
+
+                <p>Como salida, planteamos una instalación interactiva donde el público experimente en su propio cuerpo la dificultad de este trabajo. 
 A través de estaciones que reproducen esfuerzos cotidianos cargar, empujar o resistir, la propuesta combina lo sensible con lo informativo: la vivencia corporal junto con textos que sensivilizan. Desde la ironía de trasladar estructuras de trabajo a un espacio expositivo, buscamos generar un dispositivo crítico que convierta lo invisible en tangible, utilizando el cuerpo como plataforma para interiorizar y transformar este conocimiento en acción.</p>
-						
-					</article>
-				</section>
+            </div>
 
-			</div>
-		</section>
+            <div class="six columns about-image">
+                <img src="./img/poster.jpg" alt="Poster Embotellados" class="about-img-real">
+            </div>
 
-		<!-- GALERÍA -->
+        </div>
+    </div>
+</section>
+
 		<section id="galeria">
 			<div class="swiper" id="galeria-slider">
 				<div class="swiper-wrapper">
@@ -100,22 +95,17 @@ A través de estaciones que reproducen esfuerzos cotidianos cargar, empujar o re
 			<div class="swiper-pagination"></div>
 		</section>
 
-		<!-- EXPERIENCIA INVERSIVA -->
 		<section id="experiencia-inmersiva">
 			<div class="container">
 				<div class="row experiencia-wrapper">
 
-					<!-- Texto -->
 					<article class="columns six experiencia-texto">
 						<h3>EXPERIENCIA INMERSIVA</h3>
 
 						<p>En el reparto de refrescos, el cuerpo no es un acompañante: es la herramienta principal. El transportista no solo conduce; su fuerza física sostiene el sistema de distribución. Su cuerpo se vuelve vehículo, máquina y soporte: carga, empuja, organiza y resiste. La repetición diaria subir y bajar cajas, jalar el diablito, acomodar botellas se transforma en una coreografía aprendida por memoria muscular, donde cada movimiento es precisión y desgaste.</p>
-						<p>Este esfuerzo deja huellas. El cansancio se acumula y el cuerpo “pesa más” conforme avanza el día. Los dolores de espalda, rodillas y muñecas se normalizan, asumidos como parte inevitable del oficio:“uno se acostumbra”. </p>
-						
-						
+						<p>Este esfuerzo deja huellas. El cansancio se acumula y el cuerpo “pesa más” conforme avanza el día. Los dolores de espalda, rodillas y muñecas se normalizan, asumidos como parte inevitable del oficio:“uno se acostumbra”.</p>
 					</article>
 
-					<!-- SLIDER de imágenes -->
 					<div class="columns six experiencia-imagenes">
 						<div class="swiper" id="exp-slider">
 							<div class="swiper-wrapper">
@@ -132,60 +122,42 @@ A través de estaciones que reproducen esfuerzos cotidianos cargar, empujar o re
 			</div>
 		</section>
 
-		<!-- TESTIMONIOS -->
 		<section id="testimonios">
 			<video src="./video/testimonios embotellados.mp4" muted playsinline autoplay loop></video>
 		</section>
 
-		<img src="./img/embotellados-home.jpg" alt="Repartidor empujando diablito">
+		<img src="./img/embotellados-home.jpg" alt="">
+		
+		<section id="elcuerpo-texto">
+			<div class="container">
+				<div class="row">
+
+					<article class="columns six">
+						<h2 class="elcuerpo-titulo">
+							El cuerpo<br>como<br>herramienta<br>de trabajo
+						</h2>
+
+						<p>El proyecto de Embotellados explora la relación entre cuerpo, trabajo y movilidad a través del esfuerzo físico de los transportistas refresqueros, se propone una instalación interactiva que reproduce la fuerza, el ritmo y la resistencia implicados en su labor diaria. Más que un ejercicio técnico, es una reflexión sobre las dinámicas invisibles del trabajo manual en la ciudad y la manera en que el cuerpo se adapta a un entorno urbano que no está diseñado para él.</p>
+						<p>En el reparto de refrescos, el cuerpo no es un acompañante ni una herramienta secundaria: es el eje central que hace posible todo el sistema. El transportista no solo maneja un camión lleno de botellas; su cuerpo es el verdadero motor que sostiene, equilibra y distribuye. En cada ruta, antes que la máquina, está el cuerpo que la acciona. Se convierte en vehículo, grúa, máquina de precisión y soporte inagotable. Carga, empuja, organiza, sostiene el peso del vidrio y del aluminio, y también el peso del tiempo, de las entregas y de la prisa.</p>
+						<p>La rutina diaria bajar y subir cajas, jalar el diablito por banquetas rotas, subir escaleras con botellas al hombro, acomodar producto en exhibidores se convierte en una coreografía no escrita. Es una danza repetitiva, aprendida por memoria muscular. Los movimientos parecen automáticos, pero no lo son: detrás de cada gesto hay cálculo, equilibrio, resistencia, y un desgaste silencioso que se acumula día tras día. El cuerpo aprende el ritmo de la ruta, sabe cuándo inclinarse, cuánto peso aguanta un brazo o cuándo doblar las rodillas para evitar una lesión. Pero ese aprendizaje tiene un costo.</p>
+					</article>
+
+					<article class="columns six elcuerpo-col2">
+						<p>El cuerpo deja de sentirse igual. El cansancio no se queda al final del día: se va acumulando como una capa invisible. A media jornada ya pesa más la espalda, se sienten rígidas las muñecas, las rodillas crujen al subir una banqueta. El agotamiento se vuelve parte de la rutina, como si el cuerpo se hiciera más denso, más lento. Y, aun así, sigue.
+Los dolores de espalda, de hombros, de cintura se vuelven familiares, casi previsibles. Se normalizan. Se nombran con frases como “uno se acostumbra”, aunque en realidad no es costumbre: es resistencia a pesar del dolor.</p>
+						<p>El trabajo físico no es solo fuerza; también es tensión.
+El estrés no vive solamente en la mente: se aloja en los músculos. El tráfico aprieta los hombros, la presión por cumplir la ruta endurece la mandíbula, el sonido del claxon acelera el pulso. Durante horas el cuerpo permanece inmóvil al volante, atrapado en el sedentarismo obligado, para luego saltar de golpe a cargar pesos extremos.
+El cuerpo pasa de estar pasivo a exigirse al límite en cuestión de minutos. Ese contraste, ese constante subir y bajar de esfuerzos, desgasta más que la carga misma.</p>
+						<p>Las jornadas largas mezclan ambos extremos: estar quieto y estar al límite. Sentarse por horas, cargar por minutos, volver a sentarse, repetir. Al final del día, el cansancio no se va con el baño ni con la cena; se queda en las articulaciones, se acuesta junto al trabajador, se despierta con él al día siguiente.</p>
+						<p>El cuerpo trabaja. Sostiene. Cumple. Pero también se agrieta, se cansa, se convierte en archivo de esfuerzos invisibles.
+Aquí, la máquina no es solo el camión. La verdadera máquina es el transportista: un cuerpo que mueve mercancías, pero también historias de desgaste, disciplina y resistencia.</p>
+					</article>
+
+				</div>
+			</div>
+		</section>
 
 	</main>
-
-	        <!-- EL CUERPO COMO HERRAMIENTA DE TRABAJO -->
-        <section id="elcuerpo-texto">
-            <div class="container">
-                <div class="row">
-
-                    <!-- Columna título + primeras ideas -->
-                    <article class="columns six">
-                        <h2 class="elcuerpo-titulo">
-                            El cuerpo<br>
-                            como<br>
-                            herramienta<br>
-                            de trabajo
-                        </h2>
-
-                        <p>
-                            El proyecto de Embotellados explora la relación entre cuerpo, trabajo y movilidad a través del esfuerzo físico de los transportistas refresqueros. Se propone una instalación interactiva que reproduce la fuerza, el ritmo y la resistencia implicados en su labor diaria.
-                        </p>
-                        <p>
-                            Más que un ejercicio técnico, es una reflexión sobre las dinámicas invisibles del trabajo manual en la ciudad y la manera en que el cuerpo se adapta a un entorno urbano que no está diseñado para él.
-                        </p>
-                        <p>
-                            En el reparto de refrescos, el cuerpo no es un acompañante ni una herramienta secundaria: es el eje central que hace posible todo el sistema. El transportista no solo maneja un camión lleno de botellas; su cuerpo es el verdadero motor que sostiene, equilibra y distribuye.
-                        </p>
-                    </article>
-
-                    <!-- Columna de texto continuo -->
-                    <article class="columns six elcuerpo-col2">
-                        <p>
-                            El cuerpo deja de sentirse igual. El cansancio no se queda al final del día: se va acumulando como una capa invisible. A media jornada ya pesa más la espalda, se sienten rígidas las muñecas; las rodillas crujen al subir una banqueta. El agotamiento se vuelve parte de la rutina, como si el cuerpo se hiciera más denso, más lento.
-                        </p>
-                        <p>
-                            El trabajo físico no es solo fuerza; también es tensión. El estrés no vive solamente en la mente: se aloja en los músculos. El tráfico aprieta los hombros, la presión por cumplir la ruta endurece la mandíbula, el sonido del claxon acelera el pulso. Durante horas el cuerpo permanece inmóvil al volante, atrapado en el sedentarismo obligado, para luego saltar de golpe a cargar pesos extremos.
-                        </p>
-                        <p>
-                            Las jornadas largas mezclan ambos extremos: estar quieto y estar al límite. Sentarse por horas, cargar por minutos, volver a sentarse, repetir. Al final del día, el cansancio no se va con el baño ni con la cena; se queda en las articulaciones y se despierta con el cuerpo al día siguiente.
-                        </p>
-                        <p>
-                            El cuerpo trabaja. Sostiene. Cumple. Pero también se agrieta, se cansa, se convierte en archivo de esfuerzos invisibles. Aquí, la máquina no es solo el camión: la verdadera máquina es el transportista.
-                        </p>
-                    </article>
-
-                </div>
-            </div>
-        </section>
-
 
 	<!-- FOOTER -->
 	<footer id="main-footer">
@@ -197,7 +169,7 @@ A través de estaciones que reproducen esfuerzos cotidianos cargar, empujar o re
 
 				<div class="columns four">
 					<h3>Contacto</h3>
-					<a href="mailto:mregina@centro.edu.mx" class="button">mándanos un mail</a>
+					<a href="mailto:mregina@centro.edu.mx" class="button">Mándanos un mail</a>
 				</div>
 
 				<div class="columns four">
@@ -210,35 +182,26 @@ A través de estaciones que reproducen esfuerzos cotidianos cargar, empujar o re
 		</div>
 	</footer>
 
-	<!-- SCRIPTS -->
 	<script src="js/home.js"></script>
 	<script src="js/menu.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 	<script>
-		/* --- Galería principal --- */
-		const swiperGaleria = new Swiper("#galeria-slider", {
+		new Swiper("#galeria-slider", {
 			slidesPerView: 1,
 			spaceBetween: 10,
-			pagination: {
-				el: ".swiper-pagination",
-				clickable: true,
-			},
+			pagination: { el: ".swiper-pagination", clickable: true },
 			breakpoints: {
 				640: { slidesPerView: 2, spaceBetween: 20 },
 				768: { slidesPerView: 4, spaceBetween: 40 },
-				1024: { slidesPerView: 5, spaceBetween: 50 },
-			},
+				1024: { slidesPerView: 5, spaceBetween: 50 }
+			}
 		});
 
-		/* --- Slider Experiencia Inmersiva --- */
-		const swiperExperiencia = new Swiper("#exp-slider", {
+		new Swiper("#exp-slider", {
 			slidesPerView: 1,
 			spaceBetween: 20,
-			pagination: {
-				el: ".exp-pagination",
-				clickable: true,
-			},
+			pagination: { el: ".exp-pagination", clickable: true }
 		});
 	</script>
 
