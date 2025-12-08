@@ -82,3 +82,28 @@ body {
   background-color: #E1E3E5;
   width: 100%;
 }
+
+#testimonios {
+  background-color: #E1E3E5;
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+}
+
+#testimonios video {
+  width: 70%;          
+  max-width: 900px;   
+  border-radius: 10px; 
+  object-fit: cover;
+}
+
+#main-footer,
+#main-footer h3,
+#main-footer a,
+#main-footer .button {
+    font-family: 'Embotellados Regular', sans-serif !important;
+    font-weight: 100;
+    letter-spacing: 0.5px;
+}
+
+
