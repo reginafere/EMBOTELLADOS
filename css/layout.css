@@ -105,5 +105,59 @@ body {
     font-weight: 100;
     letter-spacing: 0.5px;
 }
+/* EL CUERPO COMO HERRAMIENTA DE TRABAJO */
+#elcuerpo-texto {
+  background-color: #ffffff;
+  color: #2d2d2b;
+  padding: 100px 0;
+}
 
+#elcuerpo-texto .elcuerpo-titulo {
+  font-family: 'Embotellados Ancha', sans-serif;
+  font-size: 3.2rem;
+  line-height: 0.9;
+  margin-bottom: 2rem;
+  text-transform: uppercase;   /* MAYÚSCULAS */
+  letter-spacing: 0px;         /* TRACKING EDITORIAL */
+}
 
+#elcuerpo-texto p {
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+#elcuerpo-texto .elcuerpo-col2 {
+  margin-top: 3.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #elcuerpo-texto .elcuerpo-titulo {
+    font-size: 2.4rem;
+    letter-spacing: 0.5px;
+  }
+  #elcuerpo-texto .elcuerpo-col2 {
+    margin-top: 2rem;
+  }
+}
+#testimonios {
+  width: 100%;
+  padding: 80px 0;         
+  background-color: #E1E3E5; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#testimonios video {
+  width: 85%;
+  max-width: 1100px;
+  height: 520px;
+  object-fit: cover;
+  border-radius: 18px;       
+  background: #000000;       
+  display: block;
+}
+#testimonios + img {
+  margin-top: 80px;         
+}
