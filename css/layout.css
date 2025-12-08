@@ -160,3 +160,109 @@ body {
 #testimonios + img {
   margin-top: 80px;         
 }
+
+/* ========= FOOTER ========= */
+
+#main-footer {
+  background: transparent;
+  padding: 80px 0;
+  margin-top: 100px;
+}
+
+/* Caja amarilla */
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: var(--amarillo);
+  padding: 50px 60px 40px;
+  border-radius: 0;
+}
+
+/* Logo pequeño centrado */
+.footer-logo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.footer-logo img {
+  max-width: 140px;
+  height: auto;
+  display: inline-block;
+}
+
+/* Grid de 3 columnas */
+.footer-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+/* Cada bloque de columna */
+.footer-block {
+  flex: 1;
+  text-align: center;
+}
+
+/* Títulos: Embotellados Ancha */
+.footer-block h4 {
+  font-family: "Embotellados Ancha", sans-serif !important;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+  color: #000;
+}
+
+/* Texto: Embotellados Regular */
+.footer-block p,
+.footer-link,
+.footer-button {
+  font-family: "Embotellados Regular", sans-serif !important;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #000;
+}
+
+/* Enlace "derechos reservados" */
+.footer-link.rights {
+  text-decoration: none;
+}
+
+.footer-link.rights:hover {
+  text-decoration: underline;
+}
+
+/* Botón */
+.footer-button {
+  display: inline-block;
+  margin-top: 0.8rem;
+  padding: 0.9rem 1.8rem;
+  background-color: #ffffff;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #000;
+  text-decoration: none;
+}
+
+.footer-button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .footer-inner {
+    padding: 40px 30px 30px;
+  }
+
+  .footer-grid {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-block {
+    text-align: center;
+  }
+}
