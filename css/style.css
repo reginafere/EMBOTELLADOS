@@ -116,7 +116,7 @@ footer#main-footer {
     border: none;
     pointer-events: auto;
     height: 70px;
-    background: #2d2d2b;
+    /* background: #2d2d2b; */
     display: flex;
 }
 
@@ -127,7 +127,7 @@ footer#main-footer {
 #button-menu:hover,
 #button-menu.active{
     filter: invert(1);
-    background-color: #c1c0c0;
+    /* background-color: #c1c0c0; */
 }
 
 #button-menu.active .tapa-icon{
