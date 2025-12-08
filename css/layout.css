@@ -129,7 +129,6 @@ body {
   margin-top: 3.5rem;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   #elcuerpo-texto .elcuerpo-titulo {
     font-size: 2.4rem;
@@ -161,7 +160,6 @@ body {
   margin-top: 80px;         
 }
 
-/* ========= FOOTER ========= */
 
 #main-footer {
   background: transparent;
@@ -169,16 +167,15 @@ body {
   margin-top: 100px;
 }
 
-/* Caja amarilla */
+
 .footer-inner {
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 12000px;
+  margin: 0;
   background-color: var(--amarillo);
   padding: 50px 60px 40px;
   border-radius: 0;
 }
 
-/* Logo pequeño centrado */
 .footer-logo {
   text-align: center;
   margin-bottom: 30px;
@@ -190,7 +187,6 @@ body {
   display: inline-block;
 }
 
-/* Grid de 3 columnas */
 .footer-grid {
   display: flex;
   justify-content: space-between;
@@ -198,33 +194,29 @@ body {
   gap: 60px;
 }
 
-/* Cada bloque de columna */
 .footer-block {
   flex: 1;
   text-align: center;
 }
 
-/* Títulos: Embotellados Ancha */
 .footer-block h4 {
   font-family: "Embotellados Ancha", sans-serif !important;
-  font-size: 1.6rem;
+  font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 1rem;
   color: #000;
 }
 
-/* Texto: Embotellados Regular */
 .footer-block p,
 .footer-link,
 .footer-button {
   font-family: "Embotellados Regular", sans-serif !important;
-  font-size: 1.1rem;
+  font-size: 1.8rem;
   line-height: 1.5;
   color: #000;
 }
 
-/* Enlace "derechos reservados" */
 .footer-link.rights {
   text-decoration: none;
 }
@@ -233,7 +225,6 @@ body {
   text-decoration: underline;
 }
 
-/* Botón */
 .footer-button {
   display: inline-block;
   margin-top: 0.8rem;
@@ -251,7 +242,6 @@ body {
   color: #fff;
 }
 
-/* Responsive */
 @media (max-width: 900px) {
   .footer-inner {
     padding: 40px 30px 30px;
